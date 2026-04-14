@@ -15,4 +15,15 @@ git commit -m "feat: Initial Setup"
 git remote add origin https://github_address
 git push origin master
 git pull origin master
+
 ```
+
+## PYTHON FOUNDATION:
+
+
+- Primitive Variables
+- Functions
+- Objects
+- Class (class deep dive)
+- Operations&Conditions
+- Loops
