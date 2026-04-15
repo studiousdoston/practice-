@@ -14,4 +14,3 @@ print("result:", result)
   3. CONSTANTS => True, False, None
 '''
 print(dir(__builtins__))
-
