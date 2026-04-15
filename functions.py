@@ -47,3 +47,22 @@ print("result3", result3)
 
 result4 = sayHi("John")
 print("result4", result4)
+
+
+print("==== Scope ====")
+b = 100 #3
+
+
+def calculate(a, b): #2
+    c = a*b     #1
+    print(f"Result = {c}")
+
+
+calculate(5, 55)
+
+# PRIORITY in SCOPE
+'''
+  1. inside the function
+  2. from the parameter
+  3. outside the function
+'''
