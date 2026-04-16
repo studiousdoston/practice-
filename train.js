@@ -6,7 +6,7 @@ MASALAN countLetter("e", "engineer") 3ni return qiladi. */
 
 //⭐️SOLUTION
 function countLetters(char, str){
-  const splitted = str.split("");
+  const splitted = str.split(""); //array
   const filtered = splitted.filter(ele=>ele===char);
   return filtered.length
 }
