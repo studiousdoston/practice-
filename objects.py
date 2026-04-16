@@ -1,6 +1,6 @@
 '''OBJECTS
-  1.
-  2.
+  1. Objects
+  2. Iterable Objects
   3.
   4.
   '''
