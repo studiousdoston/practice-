@@ -67,7 +67,7 @@ class Car():
     def __new__(cls, *arg):  #  💎*arg is a must. WHY cause we are using more than one arguments in __init__ magic method.
         print("* __new__*")
         return super().__new__(cls)
-# NOTE:📝 KEEP IN MIND: before __init__ magic method, starts __new method always runs in the back even though it is not written.
+# NOTE:📝 KEEP IN MIND: before __init__ magic method, starts  __new__  method always runs in the back even though it is not written.
 
     def __init__(self, name, year):
         self.name = name
