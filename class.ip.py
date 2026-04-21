@@ -1,7 +1,7 @@
 ''' CLASS deep dive
-  1. ENCAPSULATION
-  2. INHERITANCE
-  3. POLYMORPHISM
+  1. ENCAPSULATION 💊
+  2. INHERITANCE  💰💰
+  3. POLYMORPHISM 
 '''
 
 print("===== INHERITANCE =====")
@@ -44,6 +44,9 @@ class Dog(Animal):
 
     def protect(self):
         print("Yes, I can protect you!")
+
+    def make_voice(self):
+        print(f"{self.name} barks {self.sound}-{self.sound}")
 
 # child 2
 
@@ -103,3 +106,22 @@ print(Dog.description)  # This class is parent class for  animal objects
 print(dog.voice, fish.voice)  # True False
 print("status:", dog._status)  # status:  The animal is alive
 print("status:", cat._status)  # status:  The animal is alive
+
+print("==== POLYMORPHISM ====")
+
+dog.make_voice()  # Rex barks Woof-Woof
+fish.make_voice()  # This animal can make voice: False
+
+print("\n", "\n", "\n")
+print("------------------")
+# fish(dict) --> Fish(child class) ---> Animal(class class) --> object
+a = isinstance(fish, Fish)
+b = isinstance(fish, Animal)
+c = isinstance(fish, object)
+print(a, b, c)  # True True True
+# 📌 fish dictionary is instance of both Fish class and Animal class
+
+# Fish --> Animal --> object
+data = issubclass(Fish, Animal)
+data_2 = issubclass(Animal, object)
+print(data, data_2)  # True True
