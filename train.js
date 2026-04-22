@@ -1,35 +1,55 @@
-/*B-TASK (NodeJS)
-⭐️ SAVOL: Shunday function tuzing, u 1ta string parametrga ega bolsin, hamda osha stringda qatnashgan raqamlarni sonini bizga return qilsin.
-MASALAN countDigits("ad2a54y79wet0sfgb9") 7ni return qiladi.
-*/
+/*C-TASK (NodeJS)
+⭐️ SAVOL: Shunday function tuzing, u 2ta string parametr ega bolsin, hamda agar har ikkala string bir hil harflardan iborat bolsa true aks holda false qaytarsin
+MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true;
+ */
 
 // ⭐️ Masalaning yechimi
-function countNums(str) {
-  return str.split("").map(Number).filter(Boolean).length;
-}
-console.log(countNums("ad2a54y79wet0sfgb9"));
+ function checkContent(str1, str2){
+   if (str1.split('').every(ele => str2.split('').includes(ele)) && str2.split('').every(ele => str1.split('').includes(ele))){
+    return true
+   }
+   else 
+    return false
+ }
+ 
+console.log(checkContent("mitgroup", "gmtiprou"))
+
+
 
 //====================================================================================
 
-/*CHALLANGE TASK: Animals 
-⭐️ SAVOL shunday bir funksiya tuzingki unga berilgan argumentdagi harflarni hayvonlar arrayida hayvonlarni harflari bilan solishtirsin va mos kelganlaridan yangi bir array hosil qisin
-*/
+// /*B-TASK (NodeJS)
+// ⭐️ SAVOL: Shunday function tuzing, u 1ta string parametrga ega bolsin, hamda osha stringda qatnashgan raqamlarni sonini bizga return qilsin.
+// MASALAN countDigits("ad2a54y79wet0sfgb9") 7ni return qiladi.
+// */
 
-//⭐️ Masalaning yechimi
-const animals = ["fox", "ant", "bird", "lion", "wolf", "deer", "bear", "frog", "hen", "mole", "duck", "goat", "dog", "cat", "bat", "cow"];
-function findAnimals(word) {
-  const animal = animals.map(ele => ele.split(""));
-  const letters = word.split("");
-  let arrayOfAnimals = [];
-  for (let i = 0; i < animal.length; i++) {
-    if (animal[i].every(letter => word.includes(letter))) {
-      arrayOfAnimals.push(animal[i].join(""))
-    }
-  }
-  return arrayOfAnimals;
-};
-const foundAnimals = findAnimals("fdgwoalt");
-console.log(foundAnimals)
+// // ⭐️ Masalaning yechimi
+// function countNums(str) {
+//   return str.split("").map(Number).filter(Boolean).length;
+// }
+// console.log(countNums("ad2a54y79wet0sfgb9"));
+
+// //====================================================================================
+
+// /*CHALLANGE TASK: Animals 
+// ⭐️ SAVOL shunday bir funksiya tuzingki unga berilgan argumentdagi harflarni hayvonlar arrayida hayvonlarni harflari bilan solishtirsin va mos kelganlaridan yangi bir array hosil qisin
+// */
+
+// //⭐️ Masalaning yechimi
+// const animals = ["fox", "ant", "bird", "lion", "wolf", "deer", "bear", "frog", "hen", "mole", "duck", "goat", "dog", "cat", "bat", "cow"];
+// function findAnimals(word) {
+//   const animal = animals.map(ele => ele.split(""));
+//   const letters = word.split("");
+//   let arrayOfAnimals = [];
+//   for (let i = 0; i < animal.length; i++) {
+//     if (animal[i].every(letter => word.includes(letter))) {
+//       arrayOfAnimals.push(animal[i].join(""))
+//     }
+//   }
+//   return arrayOfAnimals;
+// };
+// const foundAnimals = findAnimals("fdgwoalt");
+// console.log(foundAnimals)
 
 //====================================================================================
 

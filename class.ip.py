@@ -1,7 +1,7 @@
 ''' CLASS deep dive
   1. ENCAPSULATION 💊
   2. INHERITANCE  💰💰
-  3. POLYMORPHISM 
+  3. POLYMORPHISM 😄🤣🤨 
 '''
 
 print("===== INHERITANCE =====")
