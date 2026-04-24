@@ -1,6 +1,6 @@
 print("===== ITERABLE OBJECTS & RANGE =====")
 
-# Iterable objects => string, dictionary, tuple, list, range, map, filter
+# Iterable objects => string, dictionary, tuple, list, range,zip, map, filter
 
 range_obj = range(3)
 print(range_obj)  # (0, 3)
