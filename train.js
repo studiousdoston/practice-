@@ -1,18 +1,32 @@
-/*C-TASK (NodeJS)
-⭐️ SAVOL: Shunday function tuzing, u 2ta string parametr ega bolsin, hamda agar har ikkala string bir hil harflardan iborat bolsa true aks holda false qaytarsin
-MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true;
- */
+/*D - TASK(NodeJS)
 
-// ⭐️ Masalaning yechimi
- function checkContent(str1, str2){
-   if (str1.split('').every(ele => str2.split('').includes(ele)) && str2.split('').every(ele => str1.split('').includes(ele))){
-    return true
-   }
-   else 
-    return false
+⭐️ SAVOL: Shunday function tuzingki unga integerlardan iborat array pass bolsin va function bizga osha arrayning eng katta qiymatiga tegishli birinchi indexni qaytarsin.
+  MASALAN: getHighestIndex([5, 21, 12, 44, 8]) return qiladi 1 sonini.
+
+⭐️ Masalaning yechimi */
+ function getHighestIndex(array){
+   const highestVal =  Math.max(...array);
+   return array.indexOf(highestVal)
  }
+console.log(getHighestIndex([5, 21, 12, 44, 8]))
+
+//====================================================================================
+
+// /*C-TASK (NodeJS)
+// ⭐️ SAVOL: Shunday function tuzing, u 2ta string parametr ega bolsin, hamda agar har ikkala string bir hil harflardan iborat bolsa true aks holda false qaytarsin
+// MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true;
+//  */
+
+// // ⭐️ Masalaning yechimi
+//  function checkContent(str1, str2){
+//    if (str1.split('').every(ele => str2.split('').includes(ele)) && str2.split('').every(ele => str1.split('').includes(ele))){
+//     return true
+//    }
+//    else 
+//     return false
+//  }
  
-console.log(checkContent("mitgroup", "gmtiprou"))
+// console.log(checkContent("mitgroup", "gmtiprou"))
 
 
 
