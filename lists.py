@@ -1,0 +1,82 @@
+'''List 
+  1. Working with lists 
+  2. Lists methods 
+  3.Lambda function
+  4. Enumerate(), map(), filter()
+'''
+
+print("====== Working with lists ======")
+
+# literal
+person = {'name': 'Deen', 'age': 25}  # dictionary
+people = ('Andrew', 'John', 'Michael')  # tuple
+groups = ['MIT', 'FLEXY', 'DEVEX', 'MG']  # list
+for team in groups:
+    print(f'the team: {team}')
+
+
+# constructor
+result = list('Hello World!')
+print(f'the letters: {result} and the size: {len(result)}')
+
+print("-----------------")
+fruits = ['apple', 'orange', 'lemon', 'kiwi']
+a = fruits[0]
+b = fruits[0:2]
+c = fruits[::3]
+d = fruits[::-1]
+
+print('a:', a)
+print('b:', b)
+print('c', c)
+print('reversed list:', d)
+
+print("====== Built-in List Methods ======")
+# methods ---> append(), insert(), pop(), remove(), clear(), sort(),index()
+
+letters = ['a', 'd', 'b']
+letters.append('c')
+print(f'the append result: {letters}')
+
+letters.insert(0, 'z')  # add front
+print(f'the insert result: {letters}')
+
+size = len(letters)-1
+result1 = letters.pop(size)
+print(f'the pop result: {result1} and {letters}')
+
+result2 = letters.pop(0)  # pop front
+print(f'the pop result: {result2} and letters: {letters}')
+
+
+print("--------------")
+animals = ['dog', 'cat', 'capybara', 'fish', 'lion']
+print('animals:', animals)
+animals.remove('lion')
+print('remove:', animals)
+
+del animals[2:4]
+print('delete:', animals)
+
+exist = animals.index('cat')
+print('exist:', exist)
+
+animals.clear()
+print('clear:', animals)
+
+if 'cat' in animals:
+    print('index of cat:', animals.index('cat'))
+else:
+    print('cat does not exist')
+
+print('---------------')
+nums = [2, 3, 5, 55, 12, 23, 19, 89]
+nums.sort()
+print(f'nums:', nums)
+nums.sort(reverse=True)
+print('reversed:', nums)
+
+# immutable sorted() & index() 
+numbers = [2,7,9,5,35,67,9,63]
+new_numbers = sorted(numbers)
+print(f'the sorted numbers:{numbers} and new_numbers {new_numbers}')
