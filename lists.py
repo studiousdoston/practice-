@@ -76,7 +76,30 @@ print(f'nums:', nums)
 nums.sort(reverse=True)
 print('reversed:', nums)
 
-# immutable sorted() & index() 
-numbers = [2,7,9,5,35,67,9,63]
+# immutable sorted() & index()
+numbers = [2, 7, 9, 5, 35, 67, 9, 63]
 new_numbers = sorted(numbers)
 print(f'the sorted numbers:{numbers} and new_numbers {new_numbers}')
+
+
+print("====== Lambda functions ======")
+# lambda is small anonymous function!
+
+def calculate(x, y): return x*y
+
+result = calculate(3, 5)
+print(result)
+
+people = [
+    ('Robert',20),
+    ('Steve', 19),
+    ('Joseph',25),
+    ('Michael',30),
+    ('Ali', 40)
+]
+people.sort()
+print('people', people)
+
+# sort by age using lambda
+people.sort(key=lambda person: person[1])
+print('sorted by age:', people)
