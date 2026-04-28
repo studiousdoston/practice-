@@ -11,28 +11,47 @@ print("===== What is comprehension & list comprehension =====")
     c) <expression> for item in iterable <condition>'''
 
 # list comp
-nums = [1,2,1,3,5,6,8,5,23]
-list_nums =[*nums] #                                  version A
+nums = [1, 2, 1, 3, 5, 6, 8, 5, 23]
+list_nums = [*nums]  # version A
 print("list_nums:", list_nums)
 print(nums is list_nums)
 print(id(nums), id(list_nums))
 
 print("--------------")
 people = [("Deen", 22), ("Steve", 67), ("Yusuf", 28)]
-list_people = [person[0] for person in people] #       version B
+list_people = [person[0] for person in people]  # version B
 
 print("list_people:", list_people)
 # list_people: ['Deen', 'Steve', 'Yusuf']
 
 cars = [
-  ("Ferrari", 78),
-  ("Toyota", 87),
-  ("Audi", 116),
-  ("BMW", 109),
-  ("Pagani", 33)
+    ("Ferrari", 78),
+    ("Toyota", 87),
+    ("Audi", 116),
+    ("BMW", 109),
+    ("Pagani", 33)
 ]
 
-list_cars = [car[0] for car in cars if car[1] > 80] #  version C
+list_cars = [car[0] for car in cars if car[1] > 80]  # version C
 
 print("list_cars:", list_cars)
 # list_cars: ['Toyota', 'Audi', 'BMW']
+
+
+print("===== set & dicitionary comprehensions =====")
+
+numbers = [1, 4, 2, 5, 6, 5, 23, 4]
+set_numbers = {*numbers}
+print("set_numbers:", set_numbers)
+# set_numbers: {1, 2, 4, 5, 6, 23}
+
+dict_people = {person[0]: person[1] for person in people}
+print("dict_people:", dict_people)
+# dict_people: {'Deen': 22, 'Steve': 67, 'Yusuf': 28}
+print(type(dict_people))
+
+dict_people2 = {person[0]: person[1] for person in people if person[1]>25}
+print("dict_people2:", dict_people2)
+# dict_people2: {'Steve': 67, 'Yusuf': 28}
+
+# ( <expression> for item in iterable) generic types 
