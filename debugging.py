@@ -30,3 +30,20 @@ with open("materials/message.txt", "r") as your_file:
   print("your_content:", your_content)
 
 print("DONE")
+
+
+print("===== Package Managers & External Package ======")
+
+'''Package Managers
+   Python > pip pipenv
+   NodeJs > npm yarn
+   PHP    > composer
+   MacOS  > brew
+'''
+# External Package > pypi.org
+
+from PIL import Image
+with Image.open("materials/pillow.jpg") as img_obj:
+  resized_img = img_obj.resize((200,300))
+  resized_img.show()
+  resized_img.save("materials/sample.jpg")
