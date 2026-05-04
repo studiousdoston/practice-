@@ -4,7 +4,7 @@ Shunday function tuzingki unga integerlardan iborat array pass bolsin va functio
 MASALAN: get_highest_index([5,  12, 21, 8]) return qiladi 1 sonini.
 '''
 '''Masalaning yechimi
-'''
+
 
 #  ⭐️ Masalaning yechimi
 def get_highest_index(num_list):
@@ -12,3 +12,4 @@ def get_highest_index(num_list):
     return num_list.index(max_num)
 
 print(get_highest_index([5, 12, 21, 8]))
+'''
