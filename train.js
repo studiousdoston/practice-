@@ -1,7 +1,35 @@
+/*L-TASK (NodeJS)
+
+Shunday function yozing, u string qabul qilsin va string ichidagi hamma sozlarni chappasiga yozib va sozlar ketma-ketligini buzmasdan stringni qaytarsin.
+MASALAN: reverseSentence("we  like  coding!") return "ew ekil gnidoc"; */
+
+function reverseSentence(text) {
+  const wordsArr = text.split(" ");
+  let emptyArr = [];
+  for (let i = 0; i < wordsArr.length; i++) {
+    const reversedWord = wordsArr[i].split("").toReversed().join("");
+    emptyArr.push(reversedWord);
+  }
+  return emptyArr.join(" ");
+}
+
+console.log(reverseSentence("we like  coding!"));
+
+/*  Steps:
+    1. split the string into individual words array
+    2. split the each word in that words array into individual letters array
+    3. reverse that letters array,
+    4. convert the reversed letters back into words
+    5. push all the words into one empty array 
+    6. convert the array with reversed words into string 
+    7. return it 
+  
+ */
+
 /*J-TASK (NodeJS)
 
 Shunday function yozing, u parametridagi array ichida eng kop takrorlangan raqamni topib qaytarsin.
-MASALAN: majorityElement([1,2,3,4,5,4,3,4]) return 4 */
+MASALAN: majorityElement([1,2,3,4,5,4,3,4]) return 4 
 
 // ⭐️ Masalaning yechimi 
 function majorityElement(arr){
@@ -21,6 +49,8 @@ function majorityElement(arr){
   return mostFrequent
 }
 console.log(majorityElement([1, 2, 3, 4, 5, 4, 3, 4]));
+
+*/
 
 //====================================================================================
 
@@ -143,4 +173,3 @@ function countLetters(char, str) {
 }
 console.log(countLetters("e", "engineering"));
 */
-

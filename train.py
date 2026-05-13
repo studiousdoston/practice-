@@ -1,3 +1,4 @@
+
 '''K-TASK (PYTHON)
 
 Shunday function yozing, u string qabul qilsin va string ichidagi eng uzun sozni qaytarsin.
